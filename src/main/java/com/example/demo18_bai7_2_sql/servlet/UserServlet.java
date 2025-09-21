@@ -30,7 +30,7 @@ public class UserServlet extends HttpServlet {
         String sqlResult = "";
         try (Connection connection = getConnection()) {
 
-            String sql = "SELECT * FROM users";
+            String sql = "SELECT * FROM demo_web";
             PreparedStatement ps = connection.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
 
